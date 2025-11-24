@@ -25,5 +25,11 @@ public class CalculadoraDescuentosTest {
 
     }
 
+    @Test
+    public void testCalcularPrecioFinal(){
+        double resultado = calc.calcularPrecioFinal(100, 10, 5);
+        assertEquals(85, resultado);
+    }
+
     
 }
