@@ -2,6 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class CalculadoraDescuentosTest {
+    
+    CalculadoraDescuentos calc = new CalculadoraDescuentos();
 
     
 }
