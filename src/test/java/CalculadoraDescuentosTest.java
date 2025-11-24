@@ -18,5 +18,12 @@ public class CalculadoraDescuentosTest {
         assertEquals(95, resultado);
     }
 
+    @Test
+    public void testDescuentoAcumulado(){
+        double resultado = calc.aplicarDescuentoAcumulado(100,10,5);
+        assertEquals(85, resultado);
+
+    }
+
     
 }
