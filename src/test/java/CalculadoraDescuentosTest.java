@@ -31,5 +31,14 @@ public class CalculadoraDescuentosTest {
         assertEquals(85, resultado);
     }
 
+    @Test
+    public void testValidarPrecioNegativo(){
+        double resultadoNegativo = calc.ValidarPrecioNegativo(-15);
+        assertEquals(0, resultadoNegativo);
+        
+        double resultadoPositivo = calc.ValidarPrecioNegativo(50);
+        assertEquals(50, resultadoPositivo);
+    }
+
     
 }

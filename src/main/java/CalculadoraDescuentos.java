@@ -16,4 +16,10 @@ public class CalculadoraDescuentos {
     public double calcularPrecioFinal(double montoOriginal, double porcentaje, double descuentoFijo){
         return aplicarDescuentoAcumulado(montoOriginal, porcentaje, descuentoFijo);
     }
+    public double ValidarPrecioNegativo(double montoFinal){
+        if(montoFinal<0){
+            return 0;
+        }
+        return montoFinal;
+    }
 }
