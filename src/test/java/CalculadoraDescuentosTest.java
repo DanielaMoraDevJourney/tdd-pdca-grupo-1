@@ -11,4 +11,12 @@ public class CalculadoraDescuentosTest {
         assertEquals(90, resultado);
     
     }
+
+    @Test
+    public void testDescuentoFijo(){
+        double resultado = calc.aplicarDescuentoFijo(100, 5);
+        assertEquals(95, resultado);
+    }
+
+    
 }
